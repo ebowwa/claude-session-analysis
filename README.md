@@ -124,11 +124,12 @@ Modify the `days` parameter in the script to analyze different time periods.
 
 ## Future Enhancements
 
-- [ ] Export session data to CSV/JSON
+- [x] Export session data to CSV/JSON
 - [ ] Visualize activity patterns
 - [ ] Track multiple user sessions
-- [ ] Integrate with Claude Code API
 - [ ] Web dashboard for monitoring
+- [ ] CLI interface improvements
+- [ ] Session duration analytics
 
 ## Contributing
 
