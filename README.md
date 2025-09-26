@@ -130,25 +130,28 @@ Modify the `days` parameter in the script to analyze different time periods.
 - [ ] Web dashboard for monitoring
 - [ ] CLI interface improvements
 - [x] Session duration analytics
-- [x] Integrate with Claude Code SDK for programmatic access
-- [x] Real-time session monitoring via SDK events
+- [x] Integrate with Claude API for enhanced analysis
+- [x] Real-time session monitoring via Claude API
 - [ ] Enhanced analytics dashboard
 - [ ] Multi-user session tracking
 - [ ] Integration with external monitoring tools
 
-## Claude Code SDK Integration
+## Claude API Integration
 
-This project now includes comprehensive examples of integrating with the Claude Code SDK for enhanced session analysis and programmatic access. See:
+This project now includes comprehensive examples of integrating with the Claude API for enhanced session analysis and programmatic access. See:
 
-- **[SDK Integration Guide](SDK_INTEGRATION.md)** - Complete documentation for Claude Code SDK integration
-- **[Example Integration Code](examples/sdk_integration_example.py)** - Python examples of SDK usage
-- **Real-time Monitoring** - Active session monitoring using SDK events
+- **[Integration Guide](SDK_INTEGRATION.md)** - Complete documentation for Claude API integration with Claude Code
+- **[Example Integration Code](examples/sdk_integration_example.py)** - Python examples using the actual Claude API
+- **Real-time Monitoring** - Active session monitoring using Claude API analysis
 - **Enhanced Analytics** - AI-powered session analysis and pattern recognition
 
-### Quick SDK Example
+### Important Note
+**Claude Code** is a terminal-based tool, not an API service. For programmatic access to Claude models, use the **Claude API** (`@anthropic-ai/sdk` or `anthropic` Python package).
+
+### Quick API Example
 ```python
 # See examples/sdk_integration_example.py for full implementation
-analyzer = ClaudeSDKSessionAnalyzer()
+analyzer = ClaudeAPISessionAnalyzer()
 report = await analyzer.create_enhanced_report()
 ```
 
