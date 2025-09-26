@@ -129,7 +129,28 @@ Modify the `days` parameter in the script to analyze different time periods.
 - [ ] Track multiple user sessions
 - [ ] Web dashboard for monitoring
 - [ ] CLI interface improvements
-- [ ] Session duration analytics
+- [x] Session duration analytics
+- [x] Integrate with Claude Code SDK for programmatic access
+- [x] Real-time session monitoring via SDK events
+- [ ] Enhanced analytics dashboard
+- [ ] Multi-user session tracking
+- [ ] Integration with external monitoring tools
+
+## Claude Code SDK Integration
+
+This project now includes comprehensive examples of integrating with the Claude Code SDK for enhanced session analysis and programmatic access. See:
+
+- **[SDK Integration Guide](SDK_INTEGRATION.md)** - Complete documentation for Claude Code SDK integration
+- **[Example Integration Code](examples/sdk_integration_example.py)** - Python examples of SDK usage
+- **Real-time Monitoring** - Active session monitoring using SDK events
+- **Enhanced Analytics** - AI-powered session analysis and pattern recognition
+
+### Quick SDK Example
+```python
+# See examples/sdk_integration_example.py for full implementation
+analyzer = ClaudeSDKSessionAnalyzer()
+report = await analyzer.create_enhanced_report()
+```
 
 ## Contributing
 
